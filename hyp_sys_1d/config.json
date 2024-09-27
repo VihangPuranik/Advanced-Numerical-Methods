@@ -1,0 +1,21 @@
+{
+  "model": "euler",
+
+  "initial_conditions": "sod_shock_tube",
+  "output_dir": "../output",
+  "output_file": "euler",
+  
+  "boundary_condition": "outflow",
+  "degree": 0,
+  "dg_limiter": "vanleer",
+  "dg_limiter_variable": "primitive",
+  "time_integrator": "forward_euler",
+  "flux": "hllc",
+  "reconstruction": "o1",
+
+  "n_interior_cells": 128,
+  "n_ghost": 2,
+
+  "t_end": 0.2,
+  "cfl_number": 0.1
+}
